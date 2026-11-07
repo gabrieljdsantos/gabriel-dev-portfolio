@@ -47,7 +47,8 @@ Apresentação das tecnologias e habilidades desenvolvidas durante minha formaç
 <!-- INSIRA A IMAGEM DA SEÇÃO DE PROJETOS AQUI -->
 
 <p align="center">
-  <img src="imagens/portfolio-projetos.png" alt="Projetos do portfólio" width="100%">
+ <img width="763" height="511" alt="projetos" src="https://github.com/user-attachments/assets/25fe673a-978b-4fff-9d2d-346f46e7dcab" />
+
 </p>
 
 ### Currículo
@@ -63,7 +64,8 @@ Apresentação das tecnologias e habilidades desenvolvidas durante minha formaç
 <!-- INSIRA A IMAGEM DA PÁGINA DE CONTATO AQUI -->
 
 <p align="center">
-  <img src="imagens/portfolio-contato.png" alt="Página de contato" width="100%">
+ <img width="766" height="562" alt="contato" src="https://github.com/user-attachments/assets/17fd12da-799c-4040-8935-1d30568bfa8a" />
+
 </p>
 
 ---
