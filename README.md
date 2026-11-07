@@ -55,7 +55,7 @@ Apresentação das tecnologias e habilidades desenvolvidas durante minha formaç
 <!-- INSIRA A IMAGEM DA PÁGINA DE CURRÍCULO AQUI -->
 
 <p align="center">
-  <img src="imagens/portfolio-curriculo.png" alt="Currículo online" width="100%">
+  <img width="780" height="635" alt="curriculo" src="https://github.com/user-attachments/assets/ed4e5cd3-4afe-44af-9662-a6e062b2cb9d" />
 </p>
 
 ### Contato
