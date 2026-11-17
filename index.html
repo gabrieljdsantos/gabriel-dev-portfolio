@@ -1,230 +1,867 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio profissional de Gabriel José dos Santos, estudante de Análise e Desenvolvimento de Sistemas.">
+
+    <meta name="description" content="Portfólio de Gabriel José dos Santos, estudante de Análise e Desenvolvimento de Sistemas.">
+
     <title>Gabriel Santos | Desenvolvedor</title>
 
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
-<header class="topo">
-    <a href="index.html" class="logo">Gabriel<span>.dev</span></a>
+    <!-- =====================================
+         NAVEGAÇÃO
+    ====================================== -->
 
-    <nav class="menu">
-        <a href="index.html" class="ativo">Início</a>
-        <a href="curriculo.html">Currículo</a>
-        <a href="blog.html">Blog</a>
-        <a href="fotos.html">Galeria</a>
-        <a href="contato.html">Contato</a>
-    </nav>
-</header>
+    <header class="topo">
 
-<main class="container">
+        <div class="container topo-conteudo">
 
-    <section class="hero" id="inicio">
+            <a href="#inicio" class="logo">
+                Gabriel<span>.dev</span>
+            </a>
 
-        <div class="hero-texto">
-            <span class="etiqueta">
-                <span class="ponto"></span>
-                ESTUDANTE DE TECNOLOGIA
-            </span>
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Abrir menu"
+                aria-expanded="false"
+            >
+                <i class="fa-solid fa-bars"></i>
+            </button>
 
-            <h1>Olá, eu sou <span>Gabriel José dos Santos.</span></h1>
+            <nav class="menu">
 
-            <h2>Desenvolvedor em formação.</h2>
+                <a href="#inicio" class="ativo">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#trajetoria">Trajetória</a>
+                <a href="contato.html">Contato</a>
 
-            <p>
-                Estudante de Análise e Desenvolvimento de Sistemas,
-                interessado em programação, desenvolvimento web e
-                criação de soluções tecnológicas.
-            </p>
+            </nav>
 
-            <p>
-                Estou construindo minha trajetória na tecnologia por
-                meio dos estudos, projetos acadêmicos e aprendizado contínuo.
-            </p>
+            <button
+                class="tema-toggle"
+                type="button"
+                aria-label="Ativar tema claro"
+            >
+                <i class="fa-solid fa-moon"></i>
+            </button>
 
-            <div class="hero-botoes">
-                <a href="#projetos" class="botao botao-principal">
-                    Conheça meus projetos <i class="fa-solid fa-arrow-right"></i>
-                </a>
-
-                <a href="curriculo.html" class="botao botao-secundario">
-                    Meu currículo
-                </a>
-            </div>
-
-            <div class="redes-sociais">
-                <a href="https://github.com/gabrieljdsantos" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-
-                <a href="https://dev.to/gabriel_jdsantos" target="_blank" rel="noopener noreferrer" aria-label="Dev.to">
-                    <i class="fa-brands fa-dev"></i>
-                </a>
-
-                <a href="https://www.linkedin.com/in/gabrieljdsantos" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-
-                <a href="https://wa.me/5511991273616" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </a>
-
-                <a href="https://www.instagram.com/gabriel_jdsantoss/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-
-                <a href="mailto:gabriel.santos.gjs@outlook.com" aria-label="E-mail">
-                    <i class="fa-solid fa-envelope"></i>
-                </a>
-            </div>
         </div>
 
-        <div class="hero-imagem">
-            <div class="imagem-moldura">
-                <img src="imagens/foto-perfil.jpeg" alt="Foto de Gabriel José dos Santos">
-            </div>
-            <div class="imagem-legenda">
-                <span class="ponto"></span>
-                Explorando o mundo da tecnologia
-            </div>
-        </div>
+    </header>
 
-    </section>
 
-    <section class="secao" id="sobre">
-        <div class="titulo-secao">
-            <span class="subtitulo">CONHEÇA UM POUCO MAIS</span>
-            <h2>Sobre mim</h2>
-        </div>
+    <main>
 
-        <div class="sobre-conteudo">
-            <p>
-                Sou Gabriel José dos Santos, estudante de Análise e
-                Desenvolvimento de Sistemas (ADS), em transição de carreira
-                para a área de tecnologia.
-            </p>
+        <!-- =====================================
+             APRESENTAÇÃO
+        ====================================== -->
 
-            <p>
-                Tenho interesse em desenvolvimento de software, programação
-                e desenvolvimento web. Busco aprimorar meus conhecimentos
-                constantemente e transformar o aprendizado em projetos práticos.
-            </p>
-        </div>
-    </section>
+        <section class="hero container" id="inicio">
 
-    <section class="secao" id="habilidades">
-        <div class="titulo-secao">
-            <span class="subtitulo">CONHECIMENTOS</span>
-            <h2>Minhas habilidades</h2>
-            <p>Tecnologias e ferramentas que fazem parte da minha jornada de aprendizado.</p>
-        </div>
+            <div class="hero-texto">
 
-        <div class="habilidades-grid">
-            <div class="habilidade"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
-            <div class="habilidade"><i class="fa-brands fa-css3-alt"></i><span>CSS3</span></div>
-            <div class="habilidade"><i class="fa-solid fa-code"></i><span>Linguagem C</span></div>
-            <div class="habilidade"><i class="fa-brands fa-python"></i><span>Python</span></div>
-            <div class="habilidade"><i class="fa-solid fa-database"></i><span>SQL</span></div>
-            <div class="habilidade"><i class="fa-brands fa-github"></i><span>GitHub</span></div>
-        </div>
-    </section>
+                <span class="etiqueta">
+                    <span class="ponto"></span>
+                    ESTUDANTE DE TECNOLOGIA
+                </span>
 
-    <section class="secao" id="projetos">
-        <div class="titulo-secao">
-            <span class="subtitulo">MEU TRABALHO</span>
-            <h2>Projetos em destaque</h2>
-            <p>Alguns projetos desenvolvidos durante meus estudos e minha trajetória acadêmica.</p>
-        </div>
+                <p class="saudacao">Olá, eu sou</p>
 
-        <div class="projetos-grid">
+                <h1>
+                    Gabriel José dos Santos<span>.</span>
+                </h1>
 
-            <article class="card-projeto">
-                <div class="projeto-icone"><i class="fa-solid fa-boxes-stacked"></i></div>
-                <span class="projeto-numero">PROJETO 01</span>
-                <h3>Sistema de Controle de Estoque</h3>
-                <p>
-                    Sistema para gerenciamento de produtos, com cadastro,
-                    consulta, alteração, exclusão, ordenação e controle de estoque.
+                <h2>
+                    Desenvolvedor em formação.
+                </h2>
+
+                <p class="hero-descricao">
+                    Estudante de Análise e Desenvolvimento de Sistemas,
+                    interessado em desenvolvimento de software,
+                    programação e criação de soluções tecnológicas.
                 </p>
-                <div class="tags">
+
+                <div class="hero-botoes">
+
+                    <a href="#projetos" class="botao botao-principal">
+                        Explorar projetos
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+
+                    <a href="curriculo.html" class="botao botao-secundario">
+                        Meu currículo
+                    </a>
+
+                </div>
+
+
+                <!-- REDES SOCIAIS NA POSIÇÃO ORIGINAL -->
+
+                <div class="redes-sociais">
+
+                    <a
+                        href="https://github.com/gabrieljdsantos"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="GitHub"
+                    >
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a
+                        href="https://www.linkedin.com/in/gabrieljdsantos"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="LinkedIn"
+                    >
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+
+                    <a
+                        href="https://dev.to/gabriel_jdsantos"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Dev.to"
+                    >
+                        <i class="fa-brands fa-dev"></i>
+                    </a>
+
+                    <a
+                        href="https://www.instagram.com/gabriel_jdsantoss/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Instagram"
+                    >
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a
+                        href="mailto:gabriel.santos.gjs@outlook.com"
+                        aria-label="E-mail"
+                    >
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- FOTO DE PERFIL -->
+
+            <div class="hero-imagem">
+
+                <div class="imagem-moldura">
+
+                    <img
+                        src="imagens/foto-perfil.jpeg"
+                        alt="Foto de Gabriel José dos Santos"
+                    >
+
+                </div>
+
+                <span class="imagem-legenda">
+                    Construindo meu futuro através da tecnologia.
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             SOBRE MIM
+        ====================================== -->
+
+        <section class="secao container" id="sobre">
+
+            <div class="titulo-secao">
+
+                <span class="subtitulo">QUEM SOU EU</span>
+
+                <h2>Sobre mim</h2>
+
+            </div>
+
+            <div class="sobre-conteudo">
+
+                <p>
+                    Sou Gabriel José dos Santos, estudante de Análise
+                    e Desenvolvimento de Sistemas, em transição de
+                    carreira para a área de tecnologia.
+                </p>
+
+                <p>
+                    Tenho interesse em programação, desenvolvimento
+                    web, banco de dados e desenvolvimento de software.
+                    Busco transformar meus estudos em projetos práticos
+                    e evoluir constantemente como desenvolvedor.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             HABILIDADES
+        ====================================== -->
+
+        <section class="secao container" id="habilidades">
+
+            <div class="titulo-secao">
+
+                <span class="subtitulo">TECNOLOGIAS</span>
+
+                <h2>Minhas habilidades</h2>
+
+                <p>
+                    Ferramentas e conhecimentos que fazem parte
+                    da minha jornada.
+                </p>
+
+            </div>
+
+            <div class="habilidades-grid">
+
+                <div class="habilidade">
+                    <i class="fa-brands fa-html5"></i>
+                    <span>HTML5</span>
+                </div>
+
+                <div class="habilidade">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <span>CSS3</span>
+                </div>
+
+                <div class="habilidade">
+                    <i class="fa-brands fa-js"></i>
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="habilidade">
+                    <i class="fa-solid fa-code"></i>
                     <span>Linguagem C</span>
-                    <span>Struct</span>
-                    <span>Funções</span>
                 </div>
-            </article>
 
-            <article class="card-projeto">
-                <div class="projeto-icone"><i class="fa-solid fa-graduation-cap"></i></div>
-                <span class="projeto-numero">PROJETO 02</span>
-                <h3>Sistema de Notas do Aluno</h3>
+                <div class="habilidade">
+                    <i class="fa-solid fa-database"></i>
+                    <span>SQL / PostgreSQL</span>
+                </div>
+
+                <div class="habilidade">
+                    <i class="fa-brands fa-github"></i>
+                    <span>Git / GitHub</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             PROJETOS
+        ====================================== -->
+
+        <section class="secao container" id="projetos">
+
+            <div class="titulo-secao">
+
+                <span class="subtitulo">MEU TRABALHO</span>
+
+                <h2>Projetos em destaque</h2>
+
                 <p>
-                    Aplicação que recebe notas, calcula a média final e
-                    informa o resultado de aprovação ou reprovação.
+                    Conheça alguns projetos que desenvolvi durante
+                    meus estudos e experiências acadêmicas.
                 </p>
-                <div class="tags">
-                    <span>Python</span>
-                    <span>Lógica</span>
-                </div>
-            </article>
 
-            <article class="card-projeto">
-                <div class="projeto-icone"><i class="fa-solid fa-file-lines"></i></div>
-                <span class="projeto-numero">PROJETO 03</span>
-                <h3>Currículo Online - Jane Doe</h3>
+            </div>
+
+
+            <!-- FILTROS -->
+
+            <div class="filtros-projetos">
+
+                <button
+                    class="filtro ativo"
+                    data-filtro="todos"
+                    aria-pressed="true"
+                >
+                    Todos
+                </button>
+
+                <button
+                    class="filtro"
+                    data-filtro="python"
+                    aria-pressed="false"
+                >
+                    Python
+                </button>
+
+                <button
+                    class="filtro"
+                    data-filtro="web"
+                    aria-pressed="false"
+                >
+                    Desenvolvimento Web
+                </button>
+
+                <button
+                    class="filtro"
+                    data-filtro="c"
+                    aria-pressed="false"
+                >
+                    Linguagem C
+                </button>
+
+            </div>
+
+
+            <!-- CARDS DOS PROJETOS -->
+
+            <div class="projetos-grid">
+
+
+                <!-- PROJETO 01: PYTHON -->
+
+                <article class="card-projeto" data-categoria="python">
+
+                    <div class="projeto-icone">
+                        <i class="fa-solid fa-calculator"></i>
+                    </div>
+
+                    <span class="projeto-numero">PROJETO 01</span>
+
+                    <h3>Calculadora de Média</h3>
+
+                    <p>
+                        Primeiro projeto de programação, desenvolvido
+                        em Python para realizar cálculos de média
+                        e praticar os fundamentos da lógica de programação.
+                    </p>
+
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>Lógica de programação</span>
+                    </div>
+
+                    <div class="projeto-acoes">
+
+                        <a
+                            href="https://github.com/gabrieljdsantos/calculo_media_python"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="link-projeto"
+                        >
+                            <i class="fa-brands fa-github"></i>
+                            Ver código no GitHub
+                        </a>
+
+                    </div>
+
+                    <span class="projeto-video">
+                        <i class="fa-solid fa-video"></i>
+                        Demonstração em vídeo em breve
+                    </span>
+
+                </article>
+
+
+                <!-- PROJETO 02: ESTOQUE EM C -->
+
+                <article class="card-projeto" data-categoria="c">
+
+                    <div class="projeto-icone">
+                        <i class="fa-solid fa-boxes-stacked"></i>
+                    </div>
+
+                    <span class="projeto-numero">PROJETO 02</span>
+
+                    <h3>Sistema de Controle de Estoque</h3>
+
+                    <p>
+                        Sistema de gerenciamento de estoque desenvolvido
+                        em linguagem C, com cadastro, consulta, alteração,
+                        exclusão, ordenação e persistência de dados em arquivos.
+                    </p>
+
+                    <div class="tags">
+                        <span>Linguagem C</span>
+                        <span>Struct</span>
+                        <span>Arquivos</span>
+                    </div>
+
+                    <div class="projeto-acoes">
+
+                        <a
+                            href="https://github.com/gabrieljdsantos/sistema-de-estoque-em-c"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="link-projeto"
+                        >
+                            <i class="fa-brands fa-github"></i>
+                            Ver código no GitHub
+                        </a>
+
+                    </div>
+
+                    <span class="projeto-video">
+                        <i class="fa-solid fa-video"></i>
+                        Demonstração em vídeo em breve
+                    </span>
+
+                </article>
+
+
+                <!-- PROJETO 03: CURRÍCULO JANE DOE -->
+
+                <article class="card-projeto" data-categoria="web">
+
+                    <div class="projeto-icone">
+                        <i class="fa-solid fa-file-lines"></i>
+                    </div>
+
+                    <span class="projeto-numero">PROJETO 03</span>
+
+                    <h3>Currículo Jane Doe</h3>
+
+                    <p>
+                        Projeto acadêmico desenvolvido para criar
+                        uma página web no formato de currículo online,
+                        apresentando informações de forma organizada.
+                    </p>
+
+                    <div class="tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                    </div>
+
+                    <div class="projeto-acoes">
+
+                        <a
+                            href="https://github.com/gabrieljdsantos/Curr-culo-Jane-Doe"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="link-projeto"
+                        >
+                            <i class="fa-brands fa-github"></i>
+                            Ver código no GitHub
+                        </a>
+
+                    </div>
+
+                    <span class="projeto-video">
+                        <i class="fa-solid fa-video"></i>
+                        Demonstração em vídeo em breve
+                    </span>
+
+                </article>
+
+
+                <!-- PROJETO 04: CLÍNICA SAÚDE PLUS -->
+
+                <article class="card-projeto" data-categoria="web">
+
+                    <div class="projeto-icone">
+                        <i class="fa-solid fa-hospital"></i>
+                    </div>
+
+                    <span class="projeto-numero">PROJETO 04</span>
+
+                    <h3>Clínica Saúde Plus</h3>
+
+                    <p>
+                        Projeto de site para agendamento de consultas
+                        médicas, desenvolvido como atividade acadêmica.
+                    </p>
+
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>Desenvolvimento Web</span>
+                    </div>
+
+                    <div class="projeto-acoes">
+
+                        <a
+                            href="https://github.com/gabrieljdsantos/clinica-saude-plus"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="link-projeto"
+                        >
+                            <i class="fa-brands fa-github"></i>
+                            Ver código no GitHub
+                        </a>
+
+                    </div>
+
+                    <span class="projeto-video">
+                        <i class="fa-solid fa-video"></i>
+                        Demonstração em vídeo em breve
+                    </span>
+
+                </article>
+
+
+                <!-- PROJETO 05: CHAT JCG -->
+
+                <article class="card-projeto" data-categoria="web">
+
+                    <div class="projeto-icone">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+
+                    <span class="projeto-numero">PROJETO 05</span>
+
+                    <h3>Chat IA — Chat JCG</h3>
+
+                    <p>
+                        Projeto acadêmico desenvolvido em equipe:
+                        um mini chat com inteligência artificial,
+                        integração com o modelo Gemma e Cloudflare
+                        Workers AI.
+                    </p>
+
+                    <div class="tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Inteligência Artificial</span>
+                    </div>
+
+                    <div class="projeto-acoes">
+
+                        <a
+                            href="https://github.com/crysnanth/chat-ia"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="link-projeto"
+                        >
+                            <i class="fa-brands fa-github"></i>
+                            Ver repositório da equipe
+                        </a>
+
+                        <a
+                            href="https://minichat-ai-web.pages.dev"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="link-projeto"
+                        >
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            Acessar aplicação
+                        </a>
+
+                    </div>
+
+                    <span class="projeto-video">
+                        <i class="fa-solid fa-video"></i>
+                        Demonstração em vídeo em breve
+                    </span>
+
+                </article>
+
+
+                <!-- PROJETO 06: PORTFÓLIO -->
+
+                <article class="card-projeto" data-categoria="web">
+
+                    <div class="projeto-icone">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+
+                    <span class="projeto-numero">PROJETO 06</span>
+
+                    <h3>Portfólio Pessoal</h3>
+
+                    <p>
+                        Meu espaço profissional na web, desenvolvido
+                        para apresentar minha trajetória, habilidades
+                        e projetos. Atualmente em constante evolução.
+                    </p>
+
+                    <div class="tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Responsividade</span>
+                    </div>
+
+                    <div class="projeto-acoes">
+
+                        <a
+                            href="https://github.com/gabrieljdsantos/gabriel-dev-portfolio"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="link-projeto"
+                        >
+                            <i class="fa-brands fa-github"></i>
+                            Ver código no GitHub
+                        </a>
+
+                        <a
+                            href="https://gabrieljdsantos.github.io/gabriel-dev-portfolio/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="link-projeto"
+                        >
+                            <i class="fa-solid fa-globe"></i>
+                            Acessar portfólio
+                        </a>
+
+                    </div>
+
+                    <span class="projeto-video">
+                        <i class="fa-solid fa-video"></i>
+                        Demonstração em vídeo em breve
+                    </span>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             TRAJETÓRIA
+        ====================================== -->
+
+        <section class="secao container" id="trajetoria">
+
+            <div class="titulo-secao">
+
+                <span class="subtitulo">MINHA EVOLUÇÃO</span>
+
+                <h2>Minha trajetória</h2>
+
                 <p>
-                    Projeto acadêmico de desenvolvimento de uma página
-                    web no formato de currículo online.
+                    Cada projeto representa uma etapa da minha
+                    evolução na área de tecnologia.
                 </p>
-                <div class="tags">
-                    <span>HTML5</span>
-                    <span>CSS3</span>
-                    <span>Font Awesome</span>
-                </div>
-            </article>
 
-            <article class="card-projeto">
-                <div class="projeto-icone"><i class="fa-solid fa-laptop-code"></i></div>
-                <span class="projeto-numero">PROJETO 04</span>
-                <h3>Portfólio Pessoal</h3>
-                <p>
-                    Site desenvolvido para apresentar minha trajetória,
-                    formação, habilidades e projetos na área de tecnologia.
-                </p>
-                <div class="tags">
-                    <span>HTML5</span>
-                    <span>CSS3</span>
-                    <span>Web Design</span>
-                </div>
-            </article>
+            </div>
 
-        </div>
-    </section>
 
-    <section class="cta">
-        <span class="subtitulo">VAMOS CONVERSAR?</span>
-        <h2>Tem uma oportunidade ou projeto em mente?</h2>
-        <p>Entre em contato. Será um prazer conhecer sua proposta!</p>
-        <a href="contato.html" class="botao botao-principal">
-            Fale comigo <i class="fa-solid fa-arrow-right"></i>
-        </a>
-    </section>
+            <div class="linha-tempo">
 
-</main>
 
-<footer class="rodape">
-    <p>© 2026 Gabriel José dos Santos. Todos os direitos reservados.</p>
-    <p>Desenvolvido com <span>HTML5</span> e <span>CSS3</span>.</p>
-</footer>
+                <!-- PROJETO 01 -->
+
+                <article class="item-tempo">
+
+                    <span class="tempo-data">29 SET 2026</span>
+
+                    <h3>Calculadora de Média em Python</h3>
+
+                    <p>
+                        Meu primeiro projeto de programação,
+                        desenvolvido para praticar lógica de
+                        programação, cálculos matemáticos e
+                        estruturas básicas.
+                    </p>
+
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>Lógica de programação</span>
+                    </div>
+
+                </article>
+
+
+                <!-- PROJETO 02 -->
+
+                <article class="item-tempo">
+
+                    <span class="tempo-data">15 OUT 2026</span>
+
+                    <h3>Currículo Jane Doe</h3>
+
+                    <p>
+                        Projeto acadêmico de desenvolvimento web,
+                        utilizando HTML e CSS para construir uma
+                        página de currículo profissional.
+                    </p>
+
+                    <div class="tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                    </div>
+
+                </article>
+
+
+                <!-- PROJETO 03 -->
+
+                <article class="item-tempo">
+
+                    <span class="tempo-data">30 OUT 2026</span>
+
+                    <h3>Sistema de Controle de Estoque</h3>
+
+                    <p>
+                        Desenvolvimento de um sistema para cadastro,
+                        consulta, alteração, exclusão e gerenciamento
+                        de produtos, utilizando estruturas e funções.
+                    </p>
+
+                    <div class="tags">
+                        <span>Linguagem C</span>
+                        <span>Struct</span>
+                        <span>Arquivos</span>
+                    </div>
+
+                </article>
+
+
+                <!-- PROJETO 04 -->
+
+                <article class="item-tempo">
+
+                    <span class="tempo-data">05 NOV 2026</span>
+
+                    <h3>Clínica Saúde Plus</h3>
+
+                    <p>
+                        Projeto acadêmico de site para agendamento
+                        de consultas médicas.
+                    </p>
+
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>Projeto acadêmico</span>
+                    </div>
+
+                </article>
+
+
+                <!-- PROJETO 05 -->
+
+                <article class="item-tempo">
+
+                    <span class="tempo-data">10 NOV 2026</span>
+
+                    <h3>Chat IA — Chat JCG</h3>
+
+                    <p>
+                        Projeto acadêmico desenvolvido em equipe,
+                        com um mini chat de inteligência artificial
+                        integrado ao modelo Gemma e Cloudflare
+                        Workers AI.
+                    </p>
+
+                    <div class="tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>IA</span>
+                    </div>
+
+                    <a
+                        href="https://minichat-ai-web.pages.dev"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="link-projeto"
+                    >
+                        Visualizar projeto
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+
+                </article>
+
+
+                <!-- ATUALIZAÇÃO DO PORTFÓLIO -->
+
+                <article class="item-tempo">
+
+                    <span class="tempo-data">17 NOV 2026</span>
+
+                    <h3>Atualização do Portfólio Pessoal</h3>
+
+                    <p>
+                        Modernização do meu portfólio com novo visual,
+                        alternância entre temas, filtros de projetos,
+                        menu responsivo e animações interativas.
+                    </p>
+
+                    <div class="tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Responsividade</span>
+                    </div>
+
+                    <span class="status-projeto">
+                        Projeto em evolução
+                    </span>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             CONTATO
+        ====================================== -->
+
+        <section class="cta container">
+
+            <span class="subtitulo">VAMOS CONVERSAR?</span>
+
+            <h2>Vamos construir algo juntos?</h2>
+
+            <p>
+                Estou aberto a oportunidades, projetos e novos
+                desafios na área de tecnologia.
+            </p>
+
+            <a href="contato.html" class="botao botao-principal">
+
+                Entre em contato
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================
+         RODAPÉ
+    ====================================== -->
+
+    <footer class="rodape">
+
+        <p>
+            © 2026 Gabriel José dos Santos. Todos os direitos reservados.
+        </p>
+
+        <p>
+            Desenvolvido com HTML5, CSS3 e JavaScript.
+        </p>
+
+    </footer>
 
 </body>
+
 </html>

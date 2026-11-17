@@ -1,67 +1,195 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Galeria | Gabriel Santos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
-<header class="topo">
-    <a href="index.html" class="logo">Gabriel<span>.dev</span></a>
-    <nav class="menu">
-        <a href="index.html">Início</a>
-        <a href="curriculo.html">Currículo</a>
-        <a href="blog.html">Blog</a>
-        <a href="fotos.html" class="ativo">Galeria</a>
-        <a href="contato.html">Contato</a>
-    </nav>
-</header>
+    <!-- =====================================
+         NAVEGAÇÃO
+    ====================================== -->
 
-<main class="container pagina-interna">
+    <header class="topo">
 
-    <section class="cabecalho-pagina">
-        <span class="subtitulo">MOMENTOS E INSPIRAÇÕES</span>
-        <h1>Galeria de fotos</h1>
-        <p>Um espaço visual para compartilhar imagens e referências.</p>
-    </section>
+        <div class="container topo-conteudo">
 
-    <section class="secao">
-        <div class="galeria">
+            <a href="index.html" class="logo">
+                Gabriel<span>.dev</span>
+            </a>
 
-            <figure class="foto-card">
-                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1000&q=80" alt="Estação de trabalho com computador">
-                <figcaption>Ambiente de desenvolvimento</figcaption>
-            </figure>
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Abrir menu"
+                aria-expanded="false"
+            >
+                <i class="fa-solid fa-bars"></i>
+            </button>
 
-            <figure class="foto-card">
-                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1000&q=80" alt="Pessoa trabalhando em um notebook">
-                <figcaption>Aprendizado e tecnologia</figcaption>
-            </figure>
+            <nav class="menu">
 
-            <figure class="foto-card">
-                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1000&q=80" alt="Equipe trabalhando em conjunto">
-                <figcaption>Colaboração e criatividade</figcaption>
-            </figure>
+                <a href="index.html">Início</a>
+                <a href="curriculo.html">Currículo</a>
+                <a href="blog.html">Blog</a>
+                <a href="fotos.html" class="ativo">Galeria</a>
+                <a href="contato.html">Contato</a>
 
-            <figure class="foto-card">
-                <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1000&q=80" alt="Código de programação em uma tela">
-                <figcaption>Programação</figcaption>
-            </figure>
+            </nav>
+
+            <button
+                class="tema-toggle"
+                type="button"
+                aria-label="Ativar tema claro"
+            >
+                <i class="fa-solid fa-moon"></i>
+            </button>
 
         </div>
-    </section>
 
-</main>
+    </header>
 
-<footer class="rodape">
-    <p>© 2026 Gabriel José dos Santos.</p>
-    <p>Desenvolvido com <span>HTML5</span> e <span>CSS3</span>.</p>
-</footer>
+
+    <main class="container pagina-interna">
+
+        <!-- =====================================
+             CABEÇALHO DA GALERIA
+        ====================================== -->
+
+        <section class="cabecalho-pagina">
+
+            <span class="subtitulo">
+                MOMENTOS E INSPIRAÇÕES
+            </span>
+
+            <h1>Galeria de fotos</h1>
+
+            <p>
+                Um espaço visual para compartilhar imagens e referências.
+            </p>
+
+        </section>
+
+
+        <!-- =====================================
+             GALERIA DE IMAGENS
+        ====================================== -->
+
+        <section class="secao">
+
+            <div class="galeria">
+
+                <!-- IMAGEM 01 -->
+
+                <figure class="foto-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1000&q=80"
+                        alt="Estação de trabalho com computador"
+                        loading="lazy"
+                    >
+
+                    <figcaption>
+                        Ambiente de desenvolvimento
+                    </figcaption>
+
+                </figure>
+
+
+                <!-- IMAGEM 02 -->
+
+                <figure class="foto-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1000&q=80"
+                        alt="Pessoa trabalhando em um notebook"
+                        loading="lazy"
+                    >
+
+                    <figcaption>
+                        Aprendizado e tecnologia
+                    </figcaption>
+
+                </figure>
+
+
+                <!-- IMAGEM 03 -->
+
+                <figure class="foto-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1000&q=80"
+                        alt="Equipe trabalhando em conjunto"
+                        loading="lazy"
+                    >
+
+                    <figcaption>
+                        Colaboração e criatividade
+                    </figcaption>
+
+                </figure>
+
+
+                <!-- IMAGEM 04 -->
+
+                <figure class="foto-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1000&q=80"
+                        alt="Código de programação em uma tela"
+                        loading="lazy"
+                    >
+
+                    <figcaption>
+                        Programação
+                    </figcaption>
+
+                </figure>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================
+         RODAPÉ
+    ====================================== -->
+
+    <footer class="rodape">
+
+        <p>
+            © 2026 Gabriel José dos Santos. Todos os direitos reservados.
+        </p>
+
+        <p>
+            Desenvolvido com HTML5, CSS3 e JavaScript.
+        </p>
+
+    </footer>
 
 </body>
+
 </html>
